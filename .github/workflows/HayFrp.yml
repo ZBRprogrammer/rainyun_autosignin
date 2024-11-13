@@ -1,0 +1,20 @@
+name: 每日签到
+
+on:
+  schedule:
+    - cron: '30 4 * * *'
+  workflow_dispatch:
+
+jobs:
+  daily-checkin:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 发送签到请求
+      run: |
+        curl -s -X POST \
+          -H "Content-Type: application/json" \
+          -H "type:sign" \
+          -H "csrf:o95owVEwlqzi4IofQ1BO" \
+          -d '{"task_name": "每日签到"}' \
+          https://api.hayfrp.org/sign
