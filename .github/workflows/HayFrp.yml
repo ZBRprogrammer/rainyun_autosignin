@@ -1,4 +1,4 @@
-name: 每日签到
+name: 每日签到HayFrp
 
 on:
   schedule:
@@ -16,5 +16,5 @@ jobs:
           -H "Content-Type: application/json" \
           -H "type:sign" \
           -H "csrf:o95owVEwlqzi4IofQ1BO" \
-          -d '{"task_name": "每日签到"}' \
+          -d '{"task_name": "每日签到HayFrp"}' \
           https://api.hayfrp.org/sign
