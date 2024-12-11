@@ -13,7 +13,11 @@ jobs:
     - name: 发送签到请求
       run: |
         curl -s -X POST \
-          -H "Content-Type: application/json" \
-          -H "Cookie: __client_id=93cd6464e4301df3b45d2af6f1ff91e6ee540409; _uid=1614897; C3VK=a1f342" \
-          -d '{"task_name": "每日打卡"}' \
+          -H "Cookie: __client_id=93cd6464e4301df3b45d2af6f1ff91e6ee540409; _uid=1614897; C3VK=84f202" \
+          -H "Accept: */*" \
+          -H "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2" \
+          -H "Accept-Encoding: gzip, deflate, br" \
+          -H "Connection: keep-alive" \
+          -H "Referer: https://www.luogu.com.cn/" \
+          -H "Cache-Control: no-cache" \
           https://www.luogu.com.cn/index/ajax_punch
