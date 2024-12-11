@@ -1,0 +1,19 @@
+name: 每日签到
+
+on:
+  schedule:
+    - cron: '30 4 * * *'
+  workflow_dispatch:
+
+jobs:
+  daily-checkin:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 发送签到请求
+      run: |
+        curl -s -X POST \
+          -H "Content-Type: application/json" \
+          -H "Cookie: __client_id=93cd6464e4301df3b45d2af6f1ff91e6ee540409; _uid=1059175; C3VK=266cd2" \
+          -d '{"task_name": "每日打卡"}' \
+          https://www.luogu.com.cn/index/ajax_punch
