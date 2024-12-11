@@ -14,5 +14,5 @@ jobs:
       run: |
         curl -s -X POST \
           -H "Content-Type: application/json" \
-          -d '{"task_name": "每日签到HayFrp","type": "sign","csrf": "o95owVEwlqzi4IofQ1BO"}' \
-          https://api.hayfrp.org/sign
+          -d '{"type": "sign","csrf": "tO1Usu7q0yOQ4wEUzsRJ"}' \
+          https://api.hayfrp.com/user
