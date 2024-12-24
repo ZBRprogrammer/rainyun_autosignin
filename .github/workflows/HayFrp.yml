@@ -14,5 +14,5 @@ jobs:
       run: |
         curl -s -X POST \
           -H "Content-Type: application/json" \
-          -d '{"type": "sign","csrf": "tO1Usu7q0yOQ4wEUzsRJ"}' \
+          -d '{"type": "sign","csrf": "TUlXkxgpOjiFIKQ6UUaM"}' \
           https://api.hayfrp.com/user
