@@ -17,3 +17,8 @@ jobs:
           -H "x-api-key: ${{ secrets.RAINYUN_API_KEY }}" \
           -d '{"task_name": "每日签到"}' \
           https://api.v2.rainyun.com/user/reward/tasks
+        curl --location --request POST 'https://api.v2.rainyun.com/user/reward/tasks' \
+          --header 'x-api-key: F7b43Atrd4ZnOn7PfnADOT28Fx1wasTE' \
+          --header 'User-Agent: Apifox/1.0.0 (https://apifox.com)' \
+          --header 'Content-Type: application/json' \
+          --data-ascii '{"task_name": "每日签到"}'
