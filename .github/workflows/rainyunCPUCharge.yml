@@ -13,7 +13,7 @@ jobs:
     steps:
     - name: 发送签到请求
       run: |
-        curl --location --request POST 'https://api.v2.rainyun.com/product/rgs//cpu-charge' \
+        curl --location --request POST 'https://api.v2.rainyun.com/product/rgs/52478/cpu-charge' \
              --header 'x-api-key: ${{ secrets.RAINYUN_API_KEY }}' \
              --header 'Content-Type: application/json' \
              --data-raw '{
