@@ -3,7 +3,7 @@ name: cpu充电
 
 on:
   schedule:
-    - cron: '0 12 * * 2,4,6'
+    - cron: '0 12 * * 3'
   workflow_dispatch:
 
 jobs:
